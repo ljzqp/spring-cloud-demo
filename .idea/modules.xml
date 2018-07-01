@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/clientfeign/client-feign.iml" filepath="$PROJECT_DIR$/clientfeign/client-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eurekaregisterserver/eureka-register-server.iml" filepath="$PROJECT_DIR$/eurekaregisterserver/eureka-register-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serviceprovider/eureka-service-provider.iml" filepath="$PROJECT_DIR$/serviceprovider/eureka-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul.iml" filepath="$PROJECT_DIR$/zuul.iml" />
+    </modules>
+  </component>
+</project>

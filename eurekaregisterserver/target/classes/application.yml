@@ -1,0 +1,20 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-register-server
+
+#hostname:后面做集群需要关注
+#register-with-eureka: false
+#fetch-registry: false
+#忽略当前服务注册到注册中心
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#defaultZone:表示注册中心暴露的地址，如果是客户端表示注册中心访问地址，配置多个就是集群环境
