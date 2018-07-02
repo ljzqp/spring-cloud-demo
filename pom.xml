@@ -12,6 +12,7 @@
         <module>serviceprovider</module>
         <module>eurekaregisterserver</module>
         <module>clientfeign</module>
+        <module>cloudzuul</module>
     </modules>
 
 
