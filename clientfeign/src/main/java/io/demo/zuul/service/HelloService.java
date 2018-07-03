@@ -3,6 +3,7 @@ package io.demo.zuul.service;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author luowenbin
@@ -13,9 +14,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
     *@FeignClient(value = "EUREKA-SERVICE-PROVIDER")
     *这里需要大写
  */
-@FeignClient(value = "EUREKA-SERVICE-PROVIDER")
+@FeignClient(value = "SERVICE-PROVIDER")
 public interface HelloService {
 
     @RequestMapping(value = "/bb/service/helloStr",method = RequestMethod.GET)
-    String hello(String name);
+    String hello(@RequestParam("name") String name);
+
+    @RequestMapping(value = "/bb/service/hello",method = RequestMethod.GET)
+    String hhh();
 }

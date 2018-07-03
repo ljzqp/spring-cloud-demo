@@ -14,8 +14,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/bb")
 public class ServiceProviderController {
 
-    @RequestMapping(name = "/service/helloStr",method = RequestMethod.GET)
-    public String getHelloString(@RequestParam(name = "name") String name){
-        return "大家好！这里是服务端的消息：->"+name;
+    @RequestMapping(value = "/service/helloStr", method = RequestMethod.GET)
+    public String getHelloString(@RequestParam(name = "name") String name) {
+        return "大家好！这里是服务端的消息：->" + name;
+    }
+
+    @RequestMapping(value = "/service/hello", method = RequestMethod.GET)
+    public String getHello() {
+        String ss = "ssss";
+        return "大家好！这里是服务端的消息：->";
     }
 }
