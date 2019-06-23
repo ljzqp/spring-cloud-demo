@@ -5,5 +5,6 @@ public class Demo {
         System.out.println("我在feature分支上第1次改动");
         System.out.println("我在feature分支上第2次改动");
         System.out.println("我在feature分支上第3次改动");
+        System.out.println("我在feature分支上第4次改动");
     }
 }
